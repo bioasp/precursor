@@ -1,0 +1,1343 @@
+<?xml version="1.0"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2" version="1" level="2" xmlns:html="http://www.w3.org/1999/xhtml">
+<model id="carsorevised_metabolic_network" name="Candidatus Carsonella ruddii">
+<listOfCompartments>
+<compartment id="cytoplasm"/>
+</listOfCompartments>
+<listOfSpecies>
+  <species id="NADPH" name="NADPH" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="L__45__ORNITHINE" name="L-ornithine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="PYRIDOXAMINE__45__5P" name="pyridoxamine 5&apos;-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="MESO__45__DIAMINOPIMELATE" name="meso-diaminopimelate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="__124__n__45__succinylll__45__2__44__6__45__diaminopimelate__124__" name="N-succinyl-L,L-2,6-diaminopimelate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="FAD" name="FAD" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="WATER" name="H2O" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="HOMO__45__SER" name="homoserine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="GDP" name="GDP" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="CPD__45__678" name="selenide" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="D__45__SEDOHEPTULOSE__45__7__45__P" name="D-sedoheptulose-7-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="ENZYME__45__S__45__SULFANYLCYSTEINE" name="protein-S-sulfanylcysteine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="DIHYDROFOLATE" name="7,8-dihydrofolate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="SHIKIMATE" name="shikimate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="__124__Acceptor__124__" name="an acceptor" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="ILE" name="L-isoleucine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="RIBULOSE__45__5P" name="D-ribulose-5-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="TMP" name="dTMP" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="ARG" name="L-arginine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="__124__5__44__10__45__methenyl__45__thf__124__" name="5,10-methenyl-THF" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_2K__45__4CH3__45__PENTANOATE" name="2-ketoisocaproate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="N__45__SUCCINYL__45__2__45__AMINO__45__6__45__KETOPIMELATE" name="N-succinyl-2-amino-6-ketopimelate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="PROTON" name="H+" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="VAL" name="L-valine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_2__45__KETOGLUTARATE" name="&amp;alpha;-ketoglutarate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="ACETYL__45__COA" name="acetyl-CoA" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="CPD__45__2961" name="6-phospho-D-gluconate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="__124__NAD__40__P__41____124__" name="NAD(P)+" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="L__45__ASPARTATE__45__SEMIALDEHYDE" name="L-aspartate-semialdehyde" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="XYLULOSE__45__5__45__PHOSPHATE" name="D-xylulose-5-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="HCO3" name="HCO3-" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="ACETALD" name="acetaldehyde" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="FORMYL__45__L__45__METHIONYL__45__PEPTIDE" name="formyl-L-methionyl peptide" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="L__45__ASPARTATE" name="L-aspartate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="UBIQUINONE__45__8" name="ubiquinone-8" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="DIOH__45__ISOVALERATE" name="2,3-dihydroxy-isovalerate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="__124__Donor__45__H2__124__" name="a reduced acceptor" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="HYDROGEN__45__PEROXIDE" name="H2O2" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_3__45__DEHYDRO__45__SHIKIMATE" name="3-dehydro-shikimate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="PPI" name="diphosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="OXYGEN__45__MOLECULE" name="oxygen" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="PHOSPHO__45__ENOL__45__PYRUVATE" name="phosphoenolpyruvate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="METHIONYL__45__PEPTIDE" name="methionyl peptide" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="L__45__ARGININO__45__SUCCINATE" name="L-arginino-succinate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="DEHYDROQUINATE" name="3-dehydroquinate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="MET" name="L-methionine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="GTP" name="GTP" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="ATP" name="ATP" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="RIBOSE__45__5P" name="D-ribose-5-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="LL__45__DIAMINOPIMELATE" name="L,L-diaminopimelate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="__124__NAD__40__P__41__H__124__" name="NAD(P)H" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="CPD__45__469" name="N-acetyl-L-glutamate 5-semialdehyde" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="GLY" name="glycine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_2__45__D__45__THREO__45__HYDROXY__45__3__45__CARBOXY__45__ISOCAPROATE" name="3-isopropylmalate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="CARBON__45__DIOXIDE" name="CO2" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="DELTA__123__1__125____45__PIPERIDEINE__45__2__45__6__45__DICARBOXYLATE" name="tetrahydrodipicolinate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="GLN" name="L-glutamine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="__124__Pi__124__" name="phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="NAD" name="NAD+" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="OXALACETIC_ACID" name="oxaloacetate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_1__45__KETO__45__2__45__METHYLVALERATE" name="2,3-dihydroxy-3-methylvalerate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="GLT" name="L-glutamate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="FUM" name="fumarate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="SUC__45__COA" name="succinyl-CoA" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="PROT__45__CYS" name="a protein L-cysteine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="ACET" name="acetate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="D__45__ALANINE" name="D-alanine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="THR" name="L-threonine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_5__45__METHYL__45__THF" name="5-methyl-THF" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="L__45__ALPHA__45__ALANINE" name="L-alanine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="SEPO3" name="selenophosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="THF" name="tetrahydrofolate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="AMP" name="AMP" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_2__45__OXOBUTANOATE" name="2-oxobutanoate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="AMMONIA" name="ammonia" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="FORMATE" name="formate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="CARBAMOYL__45__P" name="carbamoyl-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="SUC" name="succinate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="ERYTHROSE__45__4P" name="D-erythrose-4-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="__124__Alkyl__45__Hydro__45__Peroxides__124__" name="an alkylhydroperoxide" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="HOMO__45__CYS" name="L-homocysteine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="PRO" name="L-proline" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_2__45__KETO__45__ISOVALERATE" name="2-keto-isovalerate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="L__45__SELENOCYSTEINE" name="L-selenocysteine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="__124__2__44__3__45__dihydrodipicolinate__124__" name="L-2,3-dihydrodipicolinate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="UBIQUINOL__45__8" name="ubiquinol-8" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_3__45__DEOXY__45__D__45__ARABINO__45__HEPTULOSONATE__45__7__45__P" name="3-deoxy-D-arabino-heptulosonate-7-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="LYS" name="L-lysine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="FADH2" name="FADH2" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_2__45__ACETO__45__2__45__HYDROXY__45__BUTYRATE" name="2-aceto-2-hydroxy-butyrate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="GAP" name="D-glyceraldehyde-3-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="FRUCTOSE__45__6P" name="fructose-6-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="CPD__45__1301" name="tetrahydropteroyltri-L-glutamate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="CPD__45__1302" name="5-methyltetrahydropteroyltri-L-glutamate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="PYRIDOXAL_PHOSPHATE" name="pyridoxal 5&apos;-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="CHORISMATE" name="chorismate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="L__45__BETA__45__ASPARTYL__45__P" name="L-aspartyl-4-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="DUMP" name="dUMP" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_2__45__ACETO__45__LACTATE" name="2-acetolactate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="ADP" name="ADP" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="CO__45__A" name="coenzyme A" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="ACETYL__45__GLU" name="N-acetyl-L-glutamate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="L__45__CITRULLINE" name="citrulline" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_10__45__FORMYL__45__THF" name="N10-formyl-THF" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="SHIKIMATE__45__5P" name="shikimate-3-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="O__45__PHOSPHO__45__L__45__HOMOSERINE" name="O-phospho-L-homoserine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_3__45__CARBOXY__45__3__45__HYDROXY__45__ISOCAPROATE" name="2-isopropylmalate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="ALLO__45__THR" name="allothreonine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_3__45__ENOLPYRUVYL__45__SHIKIMATE__45__5P" name="5-enolpyruvyl-shikimate-3-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_2__45__THIOURIDINE" name="2-thiouridine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="SER" name="L-serine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="__124__threo__45__d__40__s__41____45__iso__45__citrate__124__" name="D-isocitrate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="SUPER__45__OXIDE" name="O2-" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="N__45__ALPHA__45__ACETYLORNITHINE" name="N-acetyl-L-ornithine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="METHYLENE__45__THF" name="5,10-methylene-THF" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="__124__l__45__delta__40__1__41____45__pyrroline_5__45__carboxylate__124__" name="pyrroline 5-carboxylate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="URIDINE" name="uridine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="__124__Alcohols__124__" name="an alcohol" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="CIS__45__ACONITATE" name="cis-aconitate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="N__45__ACETYL__45__GLUTAMYL__45__P" name="N-acetylglutamyl-phosphate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="PYRUVATE" name="pyruvate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="NADH" name="NADH" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="CYS" name="L-cysteine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="S__45__ADENOSYLMETHIONINE" name="S-adenosyl-L-methionine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="MAL" name="malate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="NADP" name="NADP+" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="CPD__45__7100" name="2-isopropyl-3-oxosuccinate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="LEU" name="L-leucine" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="CIT" name="citrate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="_2__45__KETO__45__3__45__METHYL__45__VALERATE" name="2-keto-3-methyl-valerate" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+</listOfSpecies>
+<listOfReactions>
+  <reaction id="_1TRANSKETO__45__RXN" name="Transketolase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099878 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099878-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway (partial)</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway (non-oxidative branch)</html:p>
+      <html:p>PROTEIN_CLASS: 2.2.1.1</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="XYLULOSE__45__5__45__PHOSPHATE" stoichiometry="1"/>
+      <speciesReference species="RIBOSE__45__5P" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="GAP" stoichiometry="1"/>
+      <speciesReference species="D__45__SEDOHEPTULOSE__45__7__45__P" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="ACETOLACTREDUCTOISOM__45__RXN" name="Ketol-acid reductoisomerase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099934 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099934-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: superpathway of leucine, valine, and isoleucine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: valine biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 1.1.1.86</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="NADP" stoichiometry="1"/>
+      <speciesReference species="DIOH__45__ISOVALERATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="PROTON" stoichiometry="1"/>
+      <speciesReference species="NADPH" stoichiometry="1"/>
+      <speciesReference species="_2__45__ACETO__45__LACTATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="CARBPSYN__45__RXN" name="carbamoyl-phosphate synthetase (glutamine-hydrolysing)" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099832 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099832-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis III</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis I</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis II (acetyl cycle)</html:p>
+      <html:p>PROTEIN_CLASS: 6.3.5.5</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="WATER" stoichiometry="1"/>
+      <speciesReference species="ATP" stoichiometry="2"/>
+      <speciesReference species="GLN" stoichiometry="1"/>
+      <speciesReference species="HCO3" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="GLT" stoichiometry="1"/>
+      <speciesReference species="ADP" stoichiometry="2"/>
+      <speciesReference species="CARBAMOYL__45__P" stoichiometry="1"/>
+      <speciesReference species="__124__Pi__124__" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="FORMATETHFLIG__45__RXN" name="Formate--tetrahydrofolate ligase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099794 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099794-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: formylTHF biosynthesis II</html:p>
+      <html:p>PROTEIN_CLASS: 6.3.4.3</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="THF" stoichiometry="1"/>
+      <speciesReference species="ATP" stoichiometry="1"/>
+      <speciesReference species="FORMATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="_10__45__FORMYL__45__THF" stoichiometry="1"/>
+      <speciesReference species="__124__Pi__124__" stoichiometry="1"/>
+      <speciesReference species="ADP" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="_3__45__ISOPROPYLMALDEHYDROG__45__RXN" name="3-isopropylmalate dehydrogenase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099851 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099851-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: superpathway of leucine, valine, and isoleucine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: leucine biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 1.1.1.85</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="NAD" stoichiometry="1"/>
+      <speciesReference species="_2__45__D__45__THREO__45__HYDROXY__45__3__45__CARBOXY__45__ISOCAPROATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="CPD__45__7100" stoichiometry="1"/>
+      <speciesReference species="PROTON" stoichiometry="1"/>
+      <speciesReference species="NADH" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="RXN0__45__5234" name="NA" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099797 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099797-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: NA</html:p>
+      <html:p>PROTEIN_CLASS: NA</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="ALLO__45__THR" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="GLY" stoichiometry="1"/>
+      <speciesReference species="ACETALD" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="ASPARTATEKIN__45__RXN" name="Aspartate kinase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099916 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099916-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: lysine biosynthesis I</html:p>
+      <html:p>SUBSYSTEM: homoserine biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 2.7.2.4</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="L__45__ASPARTATE" stoichiometry="1"/>
+      <speciesReference species="ATP" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ADP" stoichiometry="1"/>
+      <speciesReference species="L__45__BETA__45__ASPARTYL__45__P" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="__124__MALATE__45__DEHYDROGENASE__45____40__ACCEPTOR__41____45__RXN__124__" name="Malate dehydrogenase (acceptor)" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099863 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099863-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: TCA cycle</html:p>
+      <html:p>PROTEIN_CLASS: 1.1.99.16</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="MAL" stoichiometry="1"/>
+      <speciesReference species="__124__Acceptor__124__" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="OXALACETIC_ACID" stoichiometry="1"/>
+      <speciesReference species="__124__Donor__45__H2__124__" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="_3__46__5__46__1__46__88__45__RXN" name="Peptide deformylase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099871 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099871-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: NA</html:p>
+      <html:p>PROTEIN_CLASS: 3.5.1.88</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="WATER" stoichiometry="1"/>
+      <speciesReference species="FORMYL__45__L__45__METHIONYL__45__PEPTIDE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="FORMATE" stoichiometry="1"/>
+      <speciesReference species="METHIONYL__45__PEPTIDE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="S__45__ADENMETSYN__45__RXN" name="Methionine adenosyltransferase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099790 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099790-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: S-adenosyl-L-methionine cycle</html:p>
+      <html:p>PROTEIN_CLASS: 2.5.1.6</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="ATP" stoichiometry="1"/>
+      <speciesReference species="WATER" stoichiometry="1"/>
+      <speciesReference species="MET" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="PPI" stoichiometry="1"/>
+      <speciesReference species="S__45__ADENOSYLMETHIONINE" stoichiometry="1"/>
+      <speciesReference species="__124__Pi__124__" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="GLYOHMETRANS__45__RXN" name="glycine hydroxymethyltransferase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099797 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099797-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: glycine biosynthesis I</html:p>
+      <html:p>SUBSYSTEM: formylTHF biosynthesis II</html:p>
+      <html:p>PROTEIN_CLASS: 2.1.2.1</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="SER" stoichiometry="1"/>
+      <speciesReference species="THF" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="METHYLENE__45__THF" stoichiometry="1"/>
+      <speciesReference species="WATER" stoichiometry="1"/>
+      <speciesReference species="GLY" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="HOMOCYSMET__45__RXN" name="5-methyltetrahydropteroyltriglutamate--homocysteine S-methyltransferase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099791 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099791-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: methionine biosynthesis III</html:p>
+      <html:p>SUBSYSTEM: S-adenosyl-L-methionine cycle</html:p>
+      <html:p>PROTEIN_CLASS: 2.1.1.14</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="HOMO__45__CYS" stoichiometry="1"/>
+      <speciesReference species="CPD__45__1302" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="MET" stoichiometry="1"/>
+      <speciesReference species="CPD__45__1301" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="ACETYLORNTRANSAM__45__RXN" name="Acetylornithine aminotransferase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099952 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099952-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: ornithine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis III</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis I</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis II (acetyl cycle)</html:p>
+      <html:p>PROTEIN_CLASS: 2.6.1.11</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="N__45__ALPHA__45__ACETYLORNITHINE" stoichiometry="1"/>
+      <speciesReference species="_2__45__KETOGLUTARATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="GLT" stoichiometry="1"/>
+      <speciesReference species="CPD__45__469" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="ACETYLGLUTKIN__45__RXN" name="Acetylglutamate kinase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099842 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099842-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: ornithine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis III</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis I</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis II (acetyl cycle)</html:p>
+      <html:p>PROTEIN_CLASS: 2.7.2.8</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="ACETYL__45__GLU" stoichiometry="1"/>
+      <speciesReference species="ATP" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="N__45__ACETYL__45__GLUTAMYL__45__P" stoichiometry="1"/>
+      <speciesReference species="ADP" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="RXN__45__7800" name="NA" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: NA</html:p>
+      <html:p>PROTEIN_ASSOCIATION: NA</html:p>
+      <html:p>SUBSYSTEM: superpathway of leucine, valine, and isoleucine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: leucine biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: NA</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="CPD__45__7100" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="_2K__45__4CH3__45__PENTANOATE" stoichiometry="1"/>
+      <speciesReference species="CARBON__45__DIOXIDE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="METHYLENETHFDEHYDROG__45__NADP__45__RXN" name="Methylenetetrahydrofolate dehydrogenase (NADP+)" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099783 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099783-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: formylTHF biosynthesis II</html:p>
+      <html:p>PROTEIN_CLASS: 1.5.1.5</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="METHYLENE__45__THF" stoichiometry="1"/>
+      <speciesReference species="NADP" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="NADPH" stoichiometry="1"/>
+      <speciesReference species="__124__5__44__10__45__methenyl__45__thf__124__" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="RXN0__45__5240" name="NA" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099797 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099797-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: NA</html:p>
+      <html:p>PROTEIN_CLASS: NA</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="D__45__ALANINE" stoichiometry="1"/>
+      <speciesReference species="PYRIDOXAL_PHOSPHATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="PYRIDOXAMINE__45__5P" stoichiometry="1"/>
+      <speciesReference species="PYRUVATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="ACETOLACTSYN__45__RXN" name="Acetolactate synthase" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099936 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099936-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: superpathway of leucine, valine, and isoleucine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: valine biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 2.2.1.6</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="PYRUVATE" stoichiometry="2"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="CARBON__45__DIOXIDE" stoichiometry="1"/>
+      <speciesReference species="_2__45__ACETO__45__LACTATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="_2__46__7__46__9__46__3__45__RXN" name="Selenide,water dikinase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099849 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099849-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: selenocysteine biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 2.7.9.3</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="CPD__45__678" stoichiometry="1"/>
+      <speciesReference species="ATP" stoichiometry="1"/>
+      <speciesReference species="WATER" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="AMP" stoichiometry="1"/>
+      <speciesReference species="__124__Pi__124__" stoichiometry="1"/>
+      <speciesReference species="SEPO3" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="RIBULP3EPIM__45__RXN" name="ribulose phosphate 3-epimerase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099846 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099846-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway (partial)</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway (non-oxidative branch)</html:p>
+      <html:p>PROTEIN_CLASS: 5.1.3.1</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="RIBULOSE__45__5P" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="XYLULOSE__45__5__45__PHOSPHATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="HOMOSERDEHYDROG__45__RXN" name="Homoserine dehydrogenase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099930 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099930-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: homoserine biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 1.1.1.3</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="__124__NAD__40__P__41____124__" stoichiometry="1"/>
+      <speciesReference species="HOMO__45__SER" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="PROTON" stoichiometry="1"/>
+      <speciesReference species="L__45__ASPARTATE__45__SEMIALDEHYDE" stoichiometry="1"/>
+      <speciesReference species="__124__NAD__40__P__41__H__124__" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="HOMOSERKIN__45__RXN" name="Homoserine kinase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099930 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099930-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: threonine biosynthesis from homoserine</html:p>
+      <html:p>PROTEIN_CLASS: 2.7.1.39</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="HOMO__45__SER" stoichiometry="1"/>
+      <speciesReference species="ATP" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="O__45__PHOSPHO__45__L__45__HOMOSERINE" stoichiometry="1"/>
+      <speciesReference species="ADP" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="ACETOOHBUTREDUCTOISOM__45__RXN" name="Ketol-acid reductoisomerase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099934 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099934-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: isoleucine biosynthesis III</html:p>
+      <html:p>SUBSYSTEM: superpathway of leucine, valine, and isoleucine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: isoleucine biosynthesis from threonine</html:p>
+      <html:p>PROTEIN_CLASS: 1.1.1.86</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="NADPH" stoichiometry="1"/>
+      <speciesReference species="_2__45__ACETO__45__2__45__HYDROXY__45__BUTYRATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="NADP" stoichiometry="1"/>
+      <speciesReference species="_1__45__KETO__45__2__45__METHYLVALERATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="TETHYDPICSUCC__45__RXN" name="2,3,4,5-tetrahydropyridine-2-carboxylate N-succinyltransferase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099881 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099881-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: lysine biosynthesis I</html:p>
+      <html:p>PROTEIN_CLASS: 2.3.1.117</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="DELTA__123__1__125____45__PIPERIDEINE__45__2__45__6__45__DICARBOXYLATE" stoichiometry="1"/>
+      <speciesReference species="SUC__45__COA" stoichiometry="1"/>
+      <speciesReference species="WATER" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="CO__45__A" stoichiometry="1"/>
+      <speciesReference species="N__45__SUCCINYL__45__2__45__AMINO__45__6__45__KETOPIMELATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="N__45__ACETYLGLUTPREDUCT__45__RXN" name="N-acetyl-&amp;gamma;-glutamyl-phosphate reductase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099826 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099826-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: ornithine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis III</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis I</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis II (acetyl cycle)</html:p>
+      <html:p>PROTEIN_CLASS: 1.2.1.38</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="__124__Pi__124__" stoichiometry="1"/>
+      <speciesReference species="NADP" stoichiometry="1"/>
+      <speciesReference species="CPD__45__469" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="NADPH" stoichiometry="1"/>
+      <speciesReference species="N__45__ACETYL__45__GLUTAMYL__45__P" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="_3__45__DEHYDROQUINATE__45__DEHYDRATASE__45__RXN" name="3-dehydroquinate dehydratase" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099877 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099877-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: chorismate biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 4.2.1.10</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="DEHYDROQUINATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="_3__45__DEHYDRO__45__SHIKIMATE" stoichiometry="1"/>
+      <speciesReference species="WATER" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="THRESYN__45__RXN" name="Threonine synthase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099929 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099929-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: threonine biosynthesis from homoserine</html:p>
+      <html:p>PROTEIN_CLASS: 4.2.3.1</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="O__45__PHOSPHO__45__L__45__HOMOSERINE" stoichiometry="1"/>
+      <speciesReference species="WATER" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="THR" stoichiometry="1"/>
+      <speciesReference species="__124__Pi__124__" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="THYMIDYLATESYN__45__RXN" name="Thymidylate synthase" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099789 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099789-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: formylTHF biosynthesis II</html:p>
+      <html:p>PROTEIN_CLASS: 2.1.1.45</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="DUMP" stoichiometry="1"/>
+      <speciesReference species="METHYLENE__45__THF" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="TMP" stoichiometry="1"/>
+      <speciesReference species="DIHYDROFOLATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="SHIKIMATE__45__5__45__DEHYDROGENASE__45__RXN" name="Shikimate 5-dehydrogenase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099794 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099794-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: chorismate biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 1.1.1.25</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="SHIKIMATE" stoichiometry="1"/>
+      <speciesReference species="NADP" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="_3__45__DEHYDRO__45__SHIKIMATE" stoichiometry="1"/>
+      <speciesReference species="NADPH" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="_1__46__5__46__1__46__20__45__RXN" name="Methylenetetrahydrofolate reductase (NADPH)" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099784 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099784-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: formylTHF biosynthesis II</html:p>
+      <html:p>PROTEIN_CLASS: 1.5.1.20</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="_5__45__METHYL__45__THF" stoichiometry="1"/>
+      <speciesReference species="__124__NAD__40__P__41____124__" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="__124__NAD__40__P__41__H__124__" stoichiometry="1"/>
+      <speciesReference species="METHYLENE__45__THF" stoichiometry="1"/>
+      <speciesReference species="PROTON" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="N__45__ACETYLTRANSFER__45__RXN" name="Amino-acid N-acetyltransferase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099966 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099966-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: ornithine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis III</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis I</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis II (acetyl cycle)</html:p>
+      <html:p>PROTEIN_CLASS: 2.3.1.1</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="ACETYL__45__COA" stoichiometry="1"/>
+      <speciesReference species="GLT" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="CO__45__A" stoichiometry="1"/>
+      <speciesReference species="ACETYL__45__GLU" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="_2__45__ISOPROPYLMALATESYN__45__RXN" name="2-isopropylmalate synthase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099847 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099847-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: superpathway of leucine, valine, and isoleucine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: leucine biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 2.3.3.13</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="WATER" stoichiometry="1"/>
+      <speciesReference species="ACETYL__45__COA" stoichiometry="1"/>
+      <speciesReference species="_2__45__KETO__45__ISOVALERATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="CO__45__A" stoichiometry="1"/>
+      <speciesReference species="_3__45__CARBOXY__45__3__45__HYDROXY__45__ISOCAPROATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="CHORISMATE__45__SYNTHASE__45__RXN" name="Chorismate synthase" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099848 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099848-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: chorismate biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 4.2.3.5</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="_3__45__ENOLPYRUVYL__45__SHIKIMATE__45__5P" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="__124__Pi__124__" stoichiometry="1"/>
+      <speciesReference species="CHORISMATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="ACONITATEHYDR__45__RXN" name="NA" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099849 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099849-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: TCA cycle variation II</html:p>
+      <html:p>SUBSYSTEM: TCA cycle</html:p>
+      <html:p>PROTEIN_CLASS: 4.2.1.3</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="WATER" stoichiometry="1"/>
+      <speciesReference species="CIS__45__ACONITATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="__124__threo__45__d__40__s__41____45__iso__45__citrate__124__" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="SUPEROX__45__DISMUT__45__RXN" name="Superoxide dismutase" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099902 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099902-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: removal of superoxide radicals</html:p>
+      <html:p>PROTEIN_CLASS: 1.15.1.1</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="PROTON" stoichiometry="2"/>
+      <speciesReference species="SUPER__45__OXIDE" stoichiometry="2"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="HYDROGEN__45__PEROXIDE" stoichiometry="1"/>
+      <speciesReference species="OXYGEN__45__MOLECULE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="DIAMINOPIMEPIM__45__RXN" name="Diaminopimelate epimerase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099874 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099874-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: lysine biosynthesis I</html:p>
+      <html:p>PROTEIN_CLASS: 5.1.1.7</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="LL__45__DIAMINOPIMELATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="MESO__45__DIAMINOPIMELATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="BRANCHED__45__CHAINAMINOTRANSFERVAL__45__RXN" name="Branched-chain amino acid aminotransferase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099868 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099868-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: superpathway of leucine, valine, and isoleucine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: valine biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 2.6.1.42</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="_2__45__KETOGLUTARATE" stoichiometry="1"/>
+      <speciesReference species="VAL" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="_2__45__KETO__45__ISOVALERATE" stoichiometry="1"/>
+      <speciesReference species="GLT" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="_3__45__ISOPROPYLMALISOM__45__RXN" name="3-isopropylmalate dehydratase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099850 ) or ( GO2099849 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099850-MONOMER ) or ( GO2099849-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: superpathway of leucine, valine, and isoleucine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: leucine biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 4.2.1.33</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="_3__45__CARBOXY__45__3__45__HYDROXY__45__ISOCAPROATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="_2__45__D__45__THREO__45__HYDROXY__45__3__45__CARBOXY__45__ISOCAPROATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="DAHPSYN__45__RXN" name="2-dehydro-3-deoxyphosphoheptonate aldolase" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099904 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099904-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: chorismate biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 2.5.1.54</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="ERYTHROSE__45__4P" stoichiometry="1"/>
+      <speciesReference species="WATER" stoichiometry="1"/>
+      <speciesReference species="PHOSPHO__45__ENOL__45__PYRUVATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="__124__Pi__124__" stoichiometry="1"/>
+      <speciesReference species="_3__45__DEOXY__45__D__45__ARABINO__45__HEPTULOSONATE__45__7__45__P" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="ORNCARBAMTRANSFER__45__RXN" name="Ornithine carbamoyltransferase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099782 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099782-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: citrulline degradation</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis I</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis II (acetyl cycle)</html:p>
+      <html:p>PROTEIN_CLASS: 2.1.3.3</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="CARBAMOYL__45__P" stoichiometry="1"/>
+      <speciesReference species="L__45__ORNITHINE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="__124__Pi__124__" stoichiometry="1"/>
+      <speciesReference species="L__45__CITRULLINE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="DIHYDROXYISOVALDEHYDRAT__45__RXN" name="Dihydroxy-acid dehydratase" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099795 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099795-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: superpathway of leucine, valine, and isoleucine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: valine biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 4.2.1.9</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="DIOH__45__ISOVALERATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="WATER" stoichiometry="1"/>
+      <speciesReference species="_2__45__KETO__45__ISOVALERATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="ARGSUCCINSYN__45__RXN" name="argininosuccinate synthetase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099910 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099910-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis III</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis I</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis II (acetyl cycle)</html:p>
+      <html:p>PROTEIN_CLASS: 6.3.4.5</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="ATP" stoichiometry="1"/>
+      <speciesReference species="L__45__CITRULLINE" stoichiometry="1"/>
+      <speciesReference species="L__45__ASPARTATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="AMP" stoichiometry="1"/>
+      <speciesReference species="PPI" stoichiometry="1"/>
+      <speciesReference species="L__45__ARGININO__45__SUCCINATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="_3__45__DEHYDROQUINATE__45__SYNTHASE__45__RXN" name="3-dehydroquinate synthase" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099794 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099794-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: chorismate biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 4.2.3.4</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="_3__45__DEOXY__45__D__45__ARABINO__45__HEPTULOSONATE__45__7__45__P" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="DEHYDROQUINATE" stoichiometry="1"/>
+      <speciesReference species="__124__Pi__124__" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="RXN__45__821" name="Proline dehydrogenase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099895 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099895-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: proline degradation I</html:p>
+      <html:p>PROTEIN_CLASS: 1.5.99.8</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="PRO" stoichiometry="1"/>
+      <speciesReference species="FAD" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="__124__l__45__delta__40__1__41____45__pyrroline_5__45__carboxylate__124__" stoichiometry="1"/>
+      <speciesReference species="FADH2" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="TRANSALDOL__45__RXN" name="Transaldolase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099919 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099919-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway (non-oxidative branch)</html:p>
+      <html:p>PROTEIN_CLASS: 2.2.1.2</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="GAP" stoichiometry="1"/>
+      <speciesReference species="D__45__SEDOHEPTULOSE__45__7__45__P" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="FRUCTOSE__45__6P" stoichiometry="1"/>
+      <speciesReference species="ERYTHROSE__45__4P" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="DIHYDROPICRED__45__RXN" name="Dihydrodipicolinate reductase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099829 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099829-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: lysine biosynthesis I</html:p>
+      <html:p>PROTEIN_CLASS: 1.3.1.26</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="DELTA__123__1__125____45__PIPERIDEINE__45__2__45__6__45__DICARBOXYLATE" stoichiometry="1"/>
+      <speciesReference species="__124__NAD__40__P__41____124__" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="PROTON" stoichiometry="1"/>
+      <speciesReference species="__124__2__44__3__45__dihydrodipicolinate__124__" stoichiometry="1"/>
+      <speciesReference species="__124__NAD__40__P__41__H__124__" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="SELENOCYSTEINE__45__LYASE__45__RXN" name="Selenocysteine lyase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099801 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099801-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: NA</html:p>
+      <html:p>PROTEIN_CLASS: 4.4.1.16</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="__124__Donor__45__H2__124__" stoichiometry="1"/>
+      <speciesReference species="L__45__SELENOCYSTEINE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="__124__Acceptor__124__" stoichiometry="1"/>
+      <speciesReference species="CPD__45__678" stoichiometry="1"/>
+      <speciesReference species="L__45__ALPHA__45__ALANINE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="CYT__45__UBIQUINOL__45__OXID__45__RXN" name="NA" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099980 ) or ( GO2099982 ) or ( GO2099979 ) or ( GO2099981 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099980-MONOMER ) or ( GO2099982-MONOMER ) or ( GO2099979-MONOMER ) or ( GO2099981-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: NA</html:p>
+      <html:p>PROTEIN_CLASS: 1.10.2.-</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="UBIQUINOL__45__8" stoichiometry="1"/>
+      <speciesReference species="OXYGEN__45__MOLECULE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="WATER" stoichiometry="2"/>
+      <speciesReference species="UBIQUINONE__45__8" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="ASPARTATE__45__SEMIALDEHYDE__45__DEHYDROGENASE__45__RXN" name="Aspartate-semialdehyde dehydrogenase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099852 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099852-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: lysine biosynthesis I</html:p>
+      <html:p>SUBSYSTEM: homoserine biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 1.2.1.11</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="__124__Pi__124__" stoichiometry="1"/>
+      <speciesReference species="L__45__ASPARTATE__45__SEMIALDEHYDE" stoichiometry="1"/>
+      <speciesReference species="NADP" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="L__45__BETA__45__ASPARTYL__45__P" stoichiometry="1"/>
+      <speciesReference species="NADPH" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="RXN0__45__308" name="NA" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099801 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099801-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: alanine biosynthesis III</html:p>
+      <html:p>PROTEIN_CLASS: 2.8.1.7</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="CYS" stoichiometry="1"/>
+      <speciesReference species="PROT__45__CYS" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="L__45__ALPHA__45__ALANINE" stoichiometry="1"/>
+      <speciesReference species="ENZYME__45__S__45__SULFANYLCYSTEINE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="DIAMINOPIMDECARB__45__RXN" name="Diaminopimelate decarboxylase" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099873 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099873-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: lysine biosynthesis I</html:p>
+      <html:p>PROTEIN_CLASS: 4.1.1.20</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="MESO__45__DIAMINOPIMELATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="LYS" stoichiometry="1"/>
+      <speciesReference species="CARBON__45__DIOXIDE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="SUCCDIAMINOPIMDESUCC__45__RXN" name="Succinyl-diaminopimelate desuccinylase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099880 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099880-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: lysine biosynthesis I</html:p>
+      <html:p>PROTEIN_CLASS: 3.5.1.18</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="WATER" stoichiometry="1"/>
+      <speciesReference species="__124__n__45__succinylll__45__2__44__6__45__diaminopimelate__124__" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="LL__45__DIAMINOPIMELATE" stoichiometry="1"/>
+      <speciesReference species="SUC" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="SUCCCOASYN__45__RXN" name="Succinate--CoA ligase (ADP-forming)" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099906 ) or ( GO2099907 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099906-MONOMER ) or ( GO2099907-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: TCA cycle</html:p>
+      <html:p>PROTEIN_CLASS: 6.2.1.5</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="SUC" stoichiometry="1"/>
+      <speciesReference species="CO__45__A" stoichiometry="1"/>
+      <speciesReference species="ATP" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ADP" stoichiometry="1"/>
+      <speciesReference species="SUC__45__COA" stoichiometry="1"/>
+      <speciesReference species="__124__Pi__124__" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="_2__46__5__46__1__46__19__45__RXN" name="3-phosphoshikimate 1-carboxyvinyltransferase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099811 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099811-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: chorismate biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 2.5.1.19</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="SHIKIMATE__45__5P" stoichiometry="1"/>
+      <speciesReference species="PHOSPHO__45__ENOL__45__PYRUVATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="_3__45__ENOLPYRUVYL__45__SHIKIMATE__45__5P" stoichiometry="1"/>
+      <speciesReference species="__124__Pi__124__" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="RIB5PISOM__45__RXN" name="Ribose 5-phosphate epimerase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099832 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099832-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway (non-oxidative branch)</html:p>
+      <html:p>PROTEIN_CLASS: 5.3.1.6</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="RIBOSE__45__5P" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="RIBULOSE__45__5P" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="R4__45__RXN" name="NA" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099865 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099865-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: NA</html:p>
+      <html:p>PROTEIN_CLASS: 1.6.4.-</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="NADH" stoichiometry="1"/>
+      <speciesReference species="__124__Alkyl__45__Hydro__45__Peroxides__124__" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="NAD" stoichiometry="1"/>
+      <speciesReference species="WATER" stoichiometry="1"/>
+      <speciesReference species="__124__Alcohols__124__" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="BRANCHED__45__CHAINAMINOTRANSFERLEU__45__RXN" name="Branched-chain amino acid aminotransferase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099868 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099868-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: superpathway of leucine, valine, and isoleucine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: leucine biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 2.6.1.42</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="_2__45__KETOGLUTARATE" stoichiometry="1"/>
+      <speciesReference species="LEU" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="GLT" stoichiometry="1"/>
+      <speciesReference species="_2K__45__4CH3__45__PENTANOATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="BRANCHED__45__CHAINAMINOTRANSFERILEU__45__RXN" name="Branched-chain amino acid aminotransferase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099868 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099868-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: isoleucine biosynthesis III</html:p>
+      <html:p>SUBSYSTEM: superpathway of leucine, valine, and isoleucine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: isoleucine biosynthesis from threonine</html:p>
+      <html:p>PROTEIN_CLASS: 2.6.1.42</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="_2__45__KETOGLUTARATE" stoichiometry="1"/>
+      <speciesReference species="ILE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="GLT" stoichiometry="1"/>
+      <speciesReference species="_2__45__KETO__45__3__45__METHYL__45__VALERATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="_2TRANSKETO__45__RXN" name="Transketolase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099878 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099878-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway (partial)</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway (non-oxidative branch)</html:p>
+      <html:p>PROTEIN_CLASS: 2.2.1.1</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="ERYTHROSE__45__4P" stoichiometry="1"/>
+      <speciesReference species="XYLULOSE__45__5__45__PHOSPHATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="GAP" stoichiometry="1"/>
+      <speciesReference species="FRUCTOSE__45__6P" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="DIHYDRODIPICSYN__45__RXN" name="dihydrodipicolinate synthase" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099911 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099911-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: lysine biosynthesis I</html:p>
+      <html:p>PROTEIN_CLASS: 4.2.1.52</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="L__45__ASPARTATE__45__SEMIALDEHYDE" stoichiometry="1"/>
+      <speciesReference species="PYRUVATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="WATER" stoichiometry="2"/>
+      <speciesReference species="__124__2__44__3__45__dihydrodipicolinate__124__" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="DIHYDROXYMETVALDEHYDRAT__45__RXN" name="Dihydroxy-acid dehydratase" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099795 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099795-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: isoleucine biosynthesis III</html:p>
+      <html:p>SUBSYSTEM: superpathway of leucine, valine, and isoleucine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: isoleucine biosynthesis from threonine</html:p>
+      <html:p>PROTEIN_CLASS: 4.2.1.9</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="_1__45__KETO__45__2__45__METHYLVALERATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="_2__45__KETO__45__3__45__METHYL__45__VALERATE" stoichiometry="1"/>
+      <speciesReference species="WATER" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="RXN0__45__1021" name="Heterotrimeric G-protein GTPase" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099940 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099940-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: NA</html:p>
+      <html:p>PROTEIN_CLASS: 3.6.5.1</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="WATER" stoichiometry="1"/>
+      <speciesReference species="GTP" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="__124__Pi__124__" stoichiometry="1"/>
+      <speciesReference species="GDP" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="SHIKIMATE__45__KINASE__45__RXN" name="shikimate-kinase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099794 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099794-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: chorismate biosynthesis</html:p>
+      <html:p>PROTEIN_CLASS: 2.7.1.71</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="SHIKIMATE" stoichiometry="1"/>
+      <speciesReference species="ATP" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ADP" stoichiometry="1"/>
+      <speciesReference species="SHIKIMATE__45__5P" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="THREDEHYD__45__RXN" name="Threonine dehydratase" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099966 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099966-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: superpathway of leucine, valine, and isoleucine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: isoleucine biosynthesis from threonine</html:p>
+      <html:p>PROTEIN_CLASS: 4.3.1.19</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="THR" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="AMMONIA" stoichiometry="1"/>
+      <speciesReference species="_2__45__OXOBUTANOATE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="ARGSUCCINLYA__45__RXN" name="Argininosuccinate lyase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099834 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099834-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis III</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis I</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis II (acetyl cycle)</html:p>
+      <html:p>PROTEIN_CLASS: 4.3.2.1</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="L__45__ARGININO__45__SUCCINATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ARG" stoichiometry="1"/>
+      <speciesReference species="FUM" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="ACONITATEDEHYDR__45__RXN" name="Aconitate hydratase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099849 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099849-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: TCA cycle variation II</html:p>
+      <html:p>SUBSYSTEM: TCA cycle</html:p>
+      <html:p>PROTEIN_CLASS: 4.2.1.3</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="CIT" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="CIS__45__ACONITATE" stoichiometry="1"/>
+      <speciesReference species="WATER" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="RXN0__45__2023" name="NA" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099883 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099883-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: NA</html:p>
+      <html:p>PROTEIN_CLASS: NA</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="URIDINE" stoichiometry="1"/>
+      <speciesReference species="CYS" stoichiometry="1"/>
+      <speciesReference species="ATP" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="L__45__ALPHA__45__ALANINE" stoichiometry="1"/>
+      <speciesReference species="_2__45__THIOURIDINE" stoichiometry="1"/>
+      <speciesReference species="AMP" stoichiometry="1"/>
+      <speciesReference species="PPI" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="ACETOOHBUTSYN__45__RXN" name="Acetolactate synthase" reversible="false">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099936 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099936-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: isoleucine biosynthesis III</html:p>
+      <html:p>SUBSYSTEM: superpathway of leucine, valine, and isoleucine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: isoleucine biosynthesis from threonine</html:p>
+      <html:p>PROTEIN_CLASS: 2.2.1.6</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="_2__45__OXOBUTANOATE" stoichiometry="1"/>
+      <speciesReference species="PYRUVATE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="_2__45__ACETO__45__2__45__HYDROXY__45__BUTYRATE" stoichiometry="1"/>
+      <speciesReference species="CARBON__45__DIOXIDE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="PYRROLINECARBDEHYDROG__45__RXN" name="1-pyrroline-5-carboxylate dehydrogenase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099895 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099895-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: proline degradation I</html:p>
+      <html:p>PROTEIN_CLASS: 1.5.1.12</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="NAD" stoichiometry="1"/>
+      <speciesReference species="WATER" stoichiometry="2"/>
+      <speciesReference species="__124__l__45__delta__40__1__41____45__pyrroline_5__45__carboxylate__124__" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="GLT" stoichiometry="1"/>
+      <speciesReference species="NADH" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="_6PGLUCONDEHYDROG__45__RXN" name="Phosphogluconate dehydrogenase (decarboxylating)" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099886 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099886-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway</html:p>
+      <html:p>SUBSYSTEM: pentose phosphate pathway (oxidative branch)</html:p>
+      <html:p>PROTEIN_CLASS: 1.1.1.44</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="CPD__45__2961" stoichiometry="1"/>
+      <speciesReference species="__124__NAD__40__P__41____124__" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="CARBON__45__DIOXIDE" stoichiometry="1"/>
+      <speciesReference species="RIBULOSE__45__5P" stoichiometry="1"/>
+      <speciesReference species="__124__NAD__40__P__41__H__124__" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+  <reaction id="ACETYLORNDEACET__45__RXN" name="Acetylornithine deacetylase" reversible="true">
+    <notes>
+      <html:p>GENE_ASSOCIATION: ( GO2099970 )</html:p>
+      <html:p>PROTEIN_ASSOCIATION: ( GO2099970-MONOMER )</html:p>
+      <html:p>SUBSYSTEM: ornithine biosynthesis</html:p>
+      <html:p>SUBSYSTEM: arginine biosynthesis I</html:p>
+      <html:p>PROTEIN_CLASS: 3.5.1.16</html:p>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="WATER" stoichiometry="1"/>
+      <speciesReference species="N__45__ALPHA__45__ACETYLORNITHINE" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ACET" stoichiometry="1"/>
+      <speciesReference species="L__45__ORNITHINE" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+</listOfReactions>
+</model>
+</sbml>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<inputs date="2013-May">
+  <target-compounds>
+    <species id="L__45__ASPARTATE" comment="AA e" />
+    <species id="LYS" comment="AA e" />
+    <species id="__124__NAcMur__45__Peptide__45__NAcGlc__45__Undecaprenols__124__" comment="Outer membrane" />
+    <species id="MET" comment="AA e" />
+    <species id="ILE" comment="AA e" />
+    <species id="CYTOSINE"/>			  
+    <species id="GLN" comment="AA" />
+    <species id="GLY" comment="RNA" />
+    <species id="L__45__ALPHA__45__ALANINE" comment="AA" />	  
+  </target-compounds>
+</inputs>

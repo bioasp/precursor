@@ -1,0 +1,27 @@
+hclasp version 1.1.4 (clasp version 2.1.3)
+Reading from stdin
+Solving...
+Answer: 1
+new_seed("N3__45__METHYLCYTOSINE")
+SATISFIABLE
+
+Models      : 1     
+Time        : 0.241s (Solving: 0.01s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.120s
+Choices     : 198    (Domain: 156)
+Conflicts   : 3
+Restarts    : 0     
+
+Atoms       : 12578 
+Rules       : 20521  (1: 18813 3: 1708)
+Bodies      : 7842  
+Equivalences: 35520  (Atom=Atom: 8426 Body=Body: 1620 Other: 25474)
+Tight       : No     (SCCs: 36 Nodes: 4379)
+
+Variables   : 4758   (Eliminated:    0 Frozen: 2944)
+Constraints : 7808   (Binary: 78.4% Ternary: 18.1% Other:  3.5%)
+Lemmas      : 41     (Binary: 24.4% Ternary: 24.4% Other: 51.2%)
+  Conflict  : 3      (Average Length: 71.0) 
+  Loop      : 38     (Average Length: 4.5) 
+  Other     : 0      (Average Length: 0.0)
+  Deleted   : 0     

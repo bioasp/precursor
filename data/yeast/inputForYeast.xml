@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<inputs date="2013-May">
+  <target-compounds>
+    <species id="MET" comment="AA e" />
+    <species id="FADH2"/>			        
+    <species id="LEU" comment="AA e" />
+    <species id="VAL" comment="AA e" />
+    <species id="L__45__ASPARTATE" comment="AA" />
+    <species id="DGTP" comment="DNA" />
+    <species id="HIS" comment="AA e" />
+    <species id="CYS" comment="AA" />
+    <species id="SER" comment="AA" />
+    <species id="L__45__ALPHA__45__ALANINE" comment="AA" />
+  </target-compounds>
+</inputs>

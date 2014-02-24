@@ -1,0 +1,31 @@
+hclasp version 1.1.4 (clasp version 2.1.3)
+Reading from stdin
+Solving...
+Answer: 1
+new_seed("VAL") new_seed("DGDP") new_seed("LEU")
+Answer: 2
+new_seed("DGDP") new_seed("_3__45__CARBOXY__45__3__45__HYDROXY__45__ISOCAPROATE")
+Answer: 3
+new_seed("DGDP") new_seed("LEU") new_seed("DIOH__45__ISOVALERATE")
+SATISFIABLE
+
+Models      : 3     
+Time        : 0.170s (Solving: 0.01s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.080s
+Choices     : 347    (Domain: 241)
+Conflicts   : 5
+Restarts    : 0     
+
+Atoms       : 8230  
+Rules       : 14211  (1: 12949 3: 1262)
+Bodies      : 5468  
+Equivalences: 24665  (Atom=Atom: 5261 Body=Body: 1008 Other: 18396)
+Tight       : No     (SCCs: 52 Nodes: 3578)
+
+Variables   : 4051   (Eliminated:    0 Frozen: 2481)
+Constraints : 6706   (Binary: 74.1% Ternary: 18.3% Other:  7.6%)
+Lemmas      : 34     (Binary: 26.5% Ternary: 35.3% Other: 38.2%)
+  Conflict  : 5      (Average Length: 18.4) 
+  Loop      : 27     (Average Length: 3.5) 
+  Other     : 2      (Average Length: 1.5)
+  Deleted   : 0     

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<inputs date="2008-01-24" comment="input file designed to search for the precursors in the whole network of Smue">
+  <input-for-model id="ecoli_metabolic_network" name="E. coli" />
+	<target-compounds>
+	  <species id="T" comment="T" />
+	</target-compounds>
+	
+
+</inputs>

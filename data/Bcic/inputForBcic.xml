@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<inputs date="2013-May">
+  <target-compounds>
+    <species id="HEME_O" />
+    <species id="CPD__45__9454" comment = "octaprenyl diphosphate" />
+    <species id="ERYTHROSE__45__4P" />
+    <species id="_6__45__PYRUVOYL__45__5678__45__TETRAHYDROPTERIN" comment="BH4 precursor" />
+    <species id="THF" />
+    <species id="OXALACETIC_ACID"/>
+    <species id="PHOSPHO__45__ENOL__45__PYRUVATE"/>
+    <species id="MET" comment="AA e" />
+    <species id="HIS" comment="AA" />
+    <species id="CHORISMATE" />	    
+  </target-compounds>
+</inputs>

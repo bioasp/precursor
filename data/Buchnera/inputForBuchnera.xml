@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<inputs date="2013-May">
+  <target-compounds>
+    <species id="GTP" comment="RNA" />
+    <species id="DGTP" comment="DNA" />
+    <species id="MET" comment="AA e" />
+    <species id="HIS" comment="AA" />
+    <species id="LYS" comment="AA e" />
+    <species id="GLT" comment="AA" />
+    <species id="UTP" comment="AA" />
+    <species id="GLY" comment="RNA" />
+    <species id="ILE" comment="AA e" />
+    <species id="LEU" comment="AA e" />
+    <species id="VAL" comment="AA e" />
+    <species id="PYRUVATE"/>
+  </target-compounds>
+</inputs>

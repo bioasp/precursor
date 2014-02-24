@@ -1,0 +1,31 @@
+hclasp version 1.1.4 (clasp version 2.1.3)
+Reading from stdin
+Solving...
+Answer: 1
+new_seed("D__45__ALANINE")
+Answer: 2
+new_seed("PYRIDOXAL_PHOSPHATE")
+Answer: 3
+new_seed("PYRIDOXAMINE__45__5P")
+SATISFIABLE
+
+Models      : 3     
+Time        : 0.029s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.010s
+Choices     : 333    (Domain: 219)
+Conflicts   : 6
+Restarts    : 0     
+
+Atoms       : 1394  
+Rules       : 3331   (1: 3016 3: 315)
+Bodies      : 968   
+Equivalences: 2385   (Atom=Atom: 779 Body=Body: 24 Other: 1582)
+Tight       : No     (SCCs: 6 Nodes: 1014)
+
+Variables   : 1137   (Eliminated:    0 Frozen:  810)
+Constraints : 3001   (Binary: 76.3% Ternary: 13.8% Other:  9.9%)
+Lemmas      : 11     (Binary:  0.0% Ternary:  9.1% Other: 90.9%)
+  Conflict  : 6      (Average Length: 15.8) 
+  Loop      : 3      (Average Length: 5.0) 
+  Other     : 2      (Average Length: 1.0)
+  Deleted   : 0     

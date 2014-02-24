@@ -1,0 +1,73 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2" version="1" level="2" xmlns:html="http://www.w3.org/1999/xhtml">
+<model id="CANGW378_metabolic_network" name="Candidatus Sulcia muelleri">
+<listOfCompartments>
+<compartment id="cytoplasm"/>
+</listOfCompartments>
+<listOfSpecies>
+  <species id="T" name="T" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="S1" name="C1" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="S2" name="C2" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="S3" name="C3" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="S4" name="C3" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="A" name="A" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="B" name="B" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+  <species id="C" name="C3" initialAmount="0" compartment="cytoplasm" boundaryCondition="false"/>
+</listOfSpecies>
+<listOfReactions>
+<reaction id="R1" name="R1" reversible="false">
+    <listOfReactants>
+      <speciesReference species="S1" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="A" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+<reaction id="R2" name="R2" reversible="false">
+    <listOfReactants>
+      <speciesReference species="S2" stoichiometry="1"/>
+      <speciesReference species="B" stoichiometry="1"/>
+      </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="A" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+<reaction id="R3" name="R3" reversible="false">
+    <listOfReactants>
+      <speciesReference species="S3" stoichiometry="1"/>
+      <speciesReference species="A" stoichiometry="1"/>
+      </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="B" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>
+<reaction id="R4" name="R4" reversible="false">
+    <listOfReactants>
+      <speciesReference species="B" stoichiometry="1"/>
+      <speciesReference species="C" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="T" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>   
+<reaction id="R5" name="R5" reversible="true">
+    <listOfReactants>
+      <speciesReference species="C" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="B" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>   
+<reaction id="R6" name="R6" reversible="false">
+    <listOfReactants>
+      <speciesReference species="S4" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="C" stoichiometry="1"/>
+    </listOfProducts>
+  </reaction>   
+  
+  
+</listOfReactions>
+</model>
+</sbml>

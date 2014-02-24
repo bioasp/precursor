@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<inputs date="2013-May">
+  <target-compounds>
+    <species id="TRP" comment="AA e" />
+    <species id="LYS" comment="AA e" />
+    <species id="ARG" comment="AA e" />
+    <species id="PYRUVATE" comment="AA" />
+    <species id="L__45__ASPARTATE" comment="AA" />
+    <species id="VITAMIN_K_2" />
+    <species id="GLT" comment="AA" />
+    <species id="THR" comment="AA e" />
+    <species id="ILE" comment="AA e" />	  
+    <species id="PHE" />	
+  </target-compounds>
+</inputs>

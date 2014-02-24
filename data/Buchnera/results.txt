@@ -1,0 +1,32 @@
+hclasp version 1.1.4 (clasp version 2.1.3)
+Reading from stdin
+Solving...
+Answer: 1
+new_seed("COPROPORPHYRINOGEN_III") new_seed("GLN") new_seed("L__45__ASPARTATE")
+new_seed("GLN") new_seed("L__45__ASPARTATE") new_seed("CPD__45__249") new_seed("_8__45__AMINO__45__7__45__OXONONANOATE")
+Answer: 3
+new_seed("GLN") new_seed("L__45__ASPARTATE") new_seed("CPD__45__1302") new_seed("HOMO__45__CYS")
+Answer: 4
+new_seed("GLN") new_seed("CPD__45__7046") new_seed("L__45__ASPARTATE") new_seed("OCTANOYL__45__ACP") new_seed("__124__Non__45__lipoylated__45__domains__124__")
+SATISFIABLE
+
+Models      : 4     
+Time        : 0.066s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time    : 0.020s
+Choices     : 293    (Domain: 225)
+Conflicts   : 2
+Restarts    : 0     
+
+Atoms       : 3968  
+Rules       : 6560   (1: 6014 3: 546)
+Bodies      : 2525  
+Equivalences: 8980   (Atom=Atom: 2562 Body=Body: 409 Other: 6009)
+Tight       : No     (SCCs: 15 Nodes: 1464)
+
+Variables   : 1779   (Eliminated:    0 Frozen: 1004)
+Constraints : 1464   (Binary: 79.8% Ternary: 17.2% Other:  2.9%)
+Lemmas      : 6      (Binary: 33.3% Ternary:  0.0% Other: 66.7%)
+  Conflict  : 2      (Average Length: 1.0) 
+  Loop      : 1      (Average Length: 7.0) 
+  Other     : 3      (Average Length: 1.7)
+  Deleted   : 0     

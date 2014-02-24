@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<inputs date="2013-May">
+  <target-compounds>
+    <species id="RIBULOSE__45__5P" comment="AA e" />
+    <species id="LYS" comment="AA e" />
+    <species id="ILE" comment="AA e" />
+    <species id="LEU" comment="AA e" />
+    <species id="MET" comment="AA e" />
+    <species id="THR" comment="AA e" />
+    <species id="VAL" comment="AA e" />
+    <species id="PYRUVATE"/>
+    <species id="FADH2"/>		
+    <species id="ENZYME__45__S__45__SULFANYLCYSTEINE"/>
+  </target-compounds>
+</inputs>
