@@ -43,12 +43,12 @@ def satcheck(net, pseeds, targets):
     if len(models)>0 : return True
     return False
 
-def get_precursor_sets_of_size(net, pseeds, targets,opt):
+def get_card_minimal_precursor_sets(net, pseeds, targets):
     net_f = net.to_file()
     pseed_f = pseeds.to_file()
     target_f = targets.to_file()
     prg = [card_min_precursor_prg, net_f, pseed_f, target_f ]
-    coptions = '--project --opt-all='+str(opt)
+    coptions = '--project --opt-mode=optN'
     solver = GringoClasp(clasp_options=coptions)
     models = solver.run(prg,nmodels=0,collapseTerms=True,collapseAtoms=False)
     os.unlink(net_f)
@@ -61,7 +61,7 @@ def get_card_min_precursor_set(net, pseeds, targets):
     pseed_f = pseeds.to_file()
     target_f = targets.to_file()
     prg = [card_min_precursor_prg, net_f, pseed_f, target_f ]
-    solver = GringoClaspOpt()
+    solver = GringoClasp()
     solution = solver.run(prg,collapseTerms=True,collapseAtoms=False)
     os.unlink(net_f)
     os.unlink(pseed_f)
@@ -95,9 +95,9 @@ def get_automatic_pseeds(net, targets):
     
     
 def get_subset_min_precursor_sets(net, pseeds, targets):
-    net_f = net.to_file()
-    pseed_f = pseeds.to_file()
-    target_f = targets.to_file()
+    net_f = net.to_file('net.lp')
+    pseed_f = pseeds.to_file('pseed.lp')
+    target_f = targets.to_file('targets.lp')
     prg = [precursor_prg, heu_prg, net_f, pseed_f, target_f ]
     solver = GringoHClasp(clasp_options='--heu=domain --enum-mode=record')
     solutions = solver.run(prg,nmodels=0,collapseTerms=True,collapseAtoms=False)

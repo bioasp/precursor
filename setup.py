@@ -33,7 +33,7 @@ class install(_install):
                          
 setup(cmdclass={'install': install},
       name='precursor',
-      version='1.1',
+      version='1.2dev',
       url='http://pypi.python.org/pypi/precursor/',
       license='GPLv3+',
       description='Compute minimal metabolic precursors sets that enable the production of target metabolites.',

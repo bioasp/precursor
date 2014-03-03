@@ -109,10 +109,6 @@ if __name__ == '__main__':
       quit()
       
     
-    net.to_file()
-    pseeds.to_file()
-    targets.to_file()
-
     print '\nCompute cardinality minimum for a precursor sets ...',
     solution = query.get_card_min_precursor_set(net, pseeds, targets)
     print 'done.'
@@ -120,8 +116,8 @@ if __name__ == '__main__':
     opt = solution.score[0]
     print '    Minimal size of a precursor set is',str(opt-1)+'.' 
 
-    print '\nCompute all precursor sets of size',str(opt-1),'...',
-    precursors = query.get_precursor_sets_of_size(net, pseeds, targets, opt)
+    print '\nCompute all cadinality minimal precursor sets...',
+    precursors = query.get_card_minimal_precursor_sets(net, pseeds, targets)
     print 'done.'
 
     for min_set in precursors :
