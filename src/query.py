@@ -36,7 +36,7 @@ def satcheck(net, pseeds, targets):
     target_f = targets.to_file()
     prg = [satcheck_prg, net_f, pseed_f, target_f ]
     solver = GringoClasp()
-    models = solver.run(prg,nmodels=1,collapseTerms=True,collapseAtoms=False)
+    models = solver.run(prg,collapseTerms=True,collapseAtoms=False)
     os.unlink(net_f)
     os.unlink(pseed_f)
     os.unlink(target_f)
@@ -50,7 +50,7 @@ def get_card_minimal_precursor_sets(net, pseeds, targets):
     prg = [card_min_precursor_prg, net_f, pseed_f, target_f ]
     coptions = '--project --opt-mode=optN'
     solver = GringoClasp(clasp_options=coptions)
-    models = solver.run(prg,nmodels=0,collapseTerms=True,collapseAtoms=False)
+    models = solver.run(prg,collapseTerms=True,collapseAtoms=False)
     os.unlink(net_f)
     os.unlink(pseed_f)
     os.unlink(target_f)
@@ -88,7 +88,7 @@ def get_automatic_pseeds(net, targets):
     target_f = targets.to_file()
     prg = [automatic_pseeds_prg, net_f, target_f ]
     solver = GringoClasp()
-    models = solver.run(prg,nmodels=10,collapseTerms=True,collapseAtoms=False)
+    models = solver.run(prg,collapseTerms=True,collapseAtoms=False)
     os.unlink(net_f)
     os.unlink(target_f)
     return models[0]
@@ -99,8 +99,8 @@ def get_subset_min_precursor_sets(net, pseeds, targets):
     pseed_f = pseeds.to_file('pseed.lp')
     target_f = targets.to_file('targets.lp')
     prg = [precursor_prg, heu_prg, net_f, pseed_f, target_f ]
-    solver = GringoHClasp(clasp_options='--heu=domain --enum-mode=record')
-    solutions = solver.run(prg,nmodels=0,collapseTerms=True,collapseAtoms=False)
+    solver = GringoHClasp(clasp_options='0 --heu=domain --enum-mode=record')
+    solutions = solver.run(prg,collapseTerms=True,collapseAtoms=False)
     os.unlink(net_f)
     os.unlink(pseed_f)
     os.unlink(target_f)
