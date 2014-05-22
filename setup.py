@@ -33,7 +33,7 @@ class install(_install):
                          
 setup(cmdclass={'install': install},
       name='precursor',
-      version='1.2.1',
+      version='1.2.2',
       url='http://pypi.python.org/pypi/precursor/',
       license='GPLv3+',
       description='Compute minimal metabolic precursors sets that enable the production of target metabolites.',
@@ -45,6 +45,6 @@ setup(cmdclass={'install': install},
       package_data = {'__precursor__' : ['encodings/*.lp']},
       scripts = ['precursor.py'],
       install_requires=[
-        "pyasp == 1.3.1"
+        "pyasp == 1.3.3"
       ]
 )

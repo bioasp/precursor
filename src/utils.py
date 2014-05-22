@@ -27,7 +27,9 @@ def clean_up() :
   
   
 def print_seeds(precursor) :
-  for p in precursor: print str(p.arg(0)),
+  for p in precursor:
+    if p.pred()=="new_seed" :
+       print str(p.arg(0)),
   print " "
 
   

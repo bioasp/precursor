@@ -99,7 +99,7 @@ def get_subset_min_precursor_sets(net, pseeds, targets):
     pseed_f = pseeds.to_file('pseed.lp')
     target_f = targets.to_file('targets.lp')
     prg = [precursor_prg, heu_prg, net_f, pseed_f, target_f ]
-    solver = GringoHClasp(clasp_options='0 --heu=domain --enum-mode=record')
+    solver = GringoClasp(clasp_options='0 --dom-mod=6 --heu=Domain --enum-mode=record')
     solutions = solver.run(prg,collapseTerms=True,collapseAtoms=False)
     os.unlink(net_f)
     os.unlink(pseed_f)
