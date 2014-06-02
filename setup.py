@@ -34,7 +34,7 @@ class install(_install):
 setup(cmdclass={'install': install},
       name='precursor',
       version='1.2.2',
-      url='http://pypi.python.org/pypi/precursor/',
+      url='http://bioasp.github.io/precursor/',
       license='GPLv3+',
       description='Compute minimal metabolic precursors sets that enable the production of target metabolites.',
       long_description=open('README').read(),
