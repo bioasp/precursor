@@ -1,4 +1,4 @@
-# Copyright (c) 2012, Sven Thiele <sthiele78@gmail.com>
+# Copyright (c) 2014, Sven Thiele <sthiele78@gmail.com>
 #
 # This file is part of precursor.
 #
@@ -33,7 +33,7 @@ class install(_install):
                          
 setup(cmdclass={'install': install},
       name='precursor',
-      version='1.2.2',
+      version='1.2.3',
       url='http://bioasp.github.io/precursor/',
       license='GPLv3+',
       description='Compute minimal metabolic precursors sets that enable the production of target metabolites.',
@@ -45,6 +45,6 @@ setup(cmdclass={'install': install},
       package_data = {'__precursor__' : ['encodings/*.lp']},
       scripts = ['precursor.py'],
       install_requires=[
-        "pyasp == 1.3.3"
+        "pyasp == 1.4.0"
       ]
 )
