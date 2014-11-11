@@ -24,7 +24,6 @@ root = __file__.rsplit('/', 1)[0]
 
 precursor_prg =      root + '/encodings/precursor.lp'
 heu_prg                  =      root + '/encodings/heuristic.lp' 
-#subset_min_precursor_prg =      root + '/encodings/min_precursor.lp' 
 card_min_precursor_prg =      root + '/encodings/card_min_precursor.lp'
 automatic_pseeds_prg =      root + '/encodings/automatic_pseed.lp'
 satcheck_prg =      root + '/encodings/satcheck_precursor.lp'
@@ -68,20 +67,6 @@ def get_card_min_precursor_set(net, pseeds, targets):
     os.unlink(target_f)
     if solution : return solution[0]
     return None
-
-#def get_subset_min_precursor_sets(net, pseeds, targets):
-    #net_f = net.to_file()
-    #pseed_f = pseeds.to_file()
-    #target_f = targets.to_file()
-    #prg = [subset_min_precursor_prg, net_f, pseed_f, target_f ]
-    #coptions = '--project'
-    #solver = GringoClasp(clasp_options=coptions)
-    #models = solver.run(prg,nmodels=0,collapseTerms=True,collapseAtoms=False)
-    #os.unlink(net_f)
-    #os.unlink(pseed_f)
-    #os.unlink(target_f)
-    #return models
-
 
 def get_automatic_pseeds(net, targets):
     net_f = net.to_file()

@@ -21,116 +21,92 @@ import argparse
 from __precursor__ import query, utils, sbml
 
 if __name__ == '__main__':
-       
+
     parser = argparse.ArgumentParser()
     parser.add_argument("net",
                         help="metabolic network in SBML format")
     parser.add_argument("inputs",
-                        help="targets in XML format") 
-                        #help="target, seed and ubiquitous metabolites in XML format") 
-    
-    parser.add_argument('--autoseeds', 
-			help="compute possible seed metabolites",
-			action="store_true")
-    
+                        help="targets in XML format")
+                        #help="target, seed and ubiquitous metabolites in XML format")
+
+    parser.add_argument('--autoseeds',
+                        help="compute possible seed metabolites",
+                        action="store_true")
+
     args = parser.parse_args()
-    
+
     netfile = args.net
     targetsfile =  args.inputs
-    
-    print 'Reading network from ',netfile,'...',
+
+    print('Reading network from ',netfile,'...',end='')
     net = sbml.readSBMLnetwork(netfile)
-    print 'done.'
+    print('done.')
 
 
-    print 'Reading inputs from ',targetsfile,'...',
+    print('Reading inputs from ',targetsfile,'...',end='')
     targets, pseeds, misc  = sbml.readPITUFU(targetsfile)
-    print 'done.'    
-    print "   ", len(targets), "target metabolites." 
-    print "   ", len(pseeds), "possible seed metabolites."    
-    net = net.union(misc)
+    print('done.')
+    print("   ", len(targets), "target metabolites.")
+    print("   ", len(pseeds), "possible seed metabolites.")
+    net = TermSet(net.union(misc))
     #print misc
-    
-    #print 'Reading targets from ',targetsfile,'...',
-    #targets = sbml.readSBMLtargets(targetsfile)
-    #print 'done.'    
-    #print "   ", len(targets), " target metabolites." 
-    
-    
-    #if args.ubi :
-      #print 'Reading ubiquitous metabolites from ',args.ubi,'...',
-      #ubi = sbml.readSBMLubiquitous(args.ubi)
-      #print 'done.'
-      #print "   ", len(ubi), " ubiquitous metabolites." 
-      #net = net.union(ubi)
-    
-    #if args.seeds :
-      #print 'Reading possible seeds from ',args.seeds,'...',
-      #pseeds = sbml.readSBMLseeds(args.seeds)
-      #print 'done.'
-      #print "   ", len(pseeds), " possible seeds."
-    #else :
-      #print 'Autocompute possible seeds ...',
-      #pseeds = query.get_automatic_pseeds(net, targets)
-      #print 'done.'
-      #print "   ", len(pseeds), " possible seeds found."
-      
-    if args.autoseeds :
-      print '\nAutocompute possible seeds ...',
-      autoseeds = query.get_automatic_pseeds(net, targets)
-      print 'done.'
-      print "   ", len(autoseeds), "possible seeds found."
-      pseeds = pseeds.union(autoseeds)
-      
-    print '\nTesting targets for producebility ...',     
-    filtered_targets = TermSet()  
-    for t in targets :
-       singlet = String2TermSet(str(t))
-       SAT = query.satcheck(net, pseeds, singlet)
-       if not SAT : 
-          filtered_targets.add(t)
-    print 'done.'   
-    
-    if len(filtered_targets) > 0:
-       print '   ',len(targets),' targets cannot be produced:'
-       for t in filtered_targets : print '   ',t.arg(0)
-       print 'cannot be produced.'
-       
-    targets = targets.difference(filtered_targets)
-    
-    if len(targets) > 0:
-       print '   ',len(targets),' targets can be produced:'
-       for t in targets : print '   ',t.arg(0)
 
-       targets = targets.difference(filtered_targets)
+    if args.autoseeds :
+      print('\nAutocompute possible seeds ...',end='')
+      autoseeds = query.get_automatic_pseeds(net, targets)
+      print('done.')
+      print('   ', len(autoseeds), 'possible seeds found.')
+      pseeds = TermSet(pseeds.union(autoseeds))
+
+    print('\nTesting targets for producebility ...',end='')
+    filtered_targets = TermSet()
+    for t in targets :
+      singlet = String2TermSet(str(t))
+      SAT = query.satcheck(net, pseeds, singlet)
+      if not SAT :
+          filtered_targets.add(t)
+    print('done.')
+
+    if len(filtered_targets) > 0:
+      print('   ',len(targets),' targets cannot be produced:')
+      for t in filtered_targets : print('   ',t.arg(0))
+      print('cannot be produced.')
+
+    targets = TermSet(targets.difference(filtered_targets))
+
+    if len(targets) > 0:
+      print('   ',len(targets),' targets can be produced:')
+      for t in targets : print('   ',t.arg(0))
+
+      targets = TermSet(targets.difference(filtered_targets))
     else:
-      print '    No Target can be produced.'
+      print('    No Target can be produced.')
       utils.clean_up()
       quit()
-      
-    
-    print '\nCompute cardinality minimum for a precursor sets ...',
+
+
+    print('\nCompute cardinality minimum for a precursor sets ...',end='')
     solution = query.get_card_min_precursor_set(net, pseeds, targets)
-    print 'done.'
+    print('done.')
 
     opt = solution.score[0]
-    print '    Minimal size of a precursor set is',str(opt-1)+'.' 
+    print('    Minimal size of a precursor set is',str(opt-1)+'.')
 
-    print '\nCompute all cadinality minimal precursor sets...',
+    print('\nCompute all cadinality minimal precursor sets...',end='')
     precursors = query.get_card_minimal_precursor_sets(net, pseeds, targets)
-    print 'done.'
+    print('done.')
 
     for min_set in precursors :
         utils.print_seeds(min_set)
-	
-    print '\nCompute subset minimal precursor sets ...',
+
+    print('\nCompute subset minimal precursor sets ...',end='')
     precursors = query.get_subset_min_precursor_sets(net, pseeds, targets)
-    print 'done.'
-        
-    print len(precursors),' subset minimal precursor sets found.'
+    print('done.')
+
+    print(len(precursors),' subset minimal precursor sets found.')
     for min_set in precursors :
         utils.print_seeds(min_set)
-    
+
 
     utils.clean_up()
 
