@@ -5,7 +5,9 @@ You can install precursor by running::
 
 	$ pip install --user precursor
 	
-The executable scripts can then be found in ~/.local/bin.
+On Linux the executable script can then be found in ``~/.local/bin``
+
+and on MacOS the script is under ``/Users/YOURUSERNAME/Library/Python/2.7/bin``.
 
 Usage
 =====
