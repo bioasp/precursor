@@ -20,73 +20,76 @@ import tempfile
 from pyasp.asp import *
 
 
-root = __file__.rsplit('/', 1)[0]
-
-precursor_prg =      root + '/encodings/precursor.lp'
-heu_prg                  =      root + '/encodings/heuristic.lp' 
-card_min_precursor_prg =      root + '/encodings/card_min_precursor.lp'
-automatic_pseeds_prg =      root + '/encodings/automatic_pseed.lp'
-satcheck_prg =      root + '/encodings/satcheck_precursor.lp'
+root                   = __file__.rsplit('/', 1)[0]
+precursor_prg          = root + '/encodings/precursor.lp'
+heu_prg                = root + '/encodings/heuristic.lp' 
+card_min_precursor_prg = root + '/encodings/card_min_precursor.lp'
+automatic_pseeds_prg   = root + '/encodings/automatic_pseed.lp'
+satcheck_prg           = root + '/encodings/satcheck_precursor.lp'
 
 
 def satcheck(net, pseeds, targets):
-    net_f = net.to_file()
-    pseed_f = pseeds.to_file()
-    target_f = targets.to_file()
-    prg = [satcheck_prg, net_f, pseed_f, target_f ]
-    solver = GringoClasp()
-    models = solver.run(prg,collapseTerms=True,collapseAtoms=False)
-    os.unlink(net_f)
-    os.unlink(pseed_f)
-    os.unlink(target_f)
-    if len(models)>0 : return True
-    return False
+  net_f    = net.to_file()
+  pseed_f  = pseeds.to_file()
+  target_f = targets.to_file()
+  prg      = [satcheck_prg, net_f, pseed_f, target_f ]
+  solver   = GringoClasp()
+  models   = solver.run(prg,collapseTerms=True,collapseAtoms=False)
+  os.unlink(net_f)
+  os.unlink(pseed_f)
+  os.unlink(target_f)
+  if len(models)>0 : return True
+  return False
+
 
 def get_card_minimal_precursor_sets(net, pseeds, targets):
-    net_f = net.to_file()
-    pseed_f = pseeds.to_file()
-    target_f = targets.to_file()
-    prg = [card_min_precursor_prg, net_f, pseed_f, target_f ]
-    coptions = '--project --opt-mode=optN'
-    solver = GringoClasp(clasp_options=coptions)
-    models = solver.run(prg,collapseTerms=True,collapseAtoms=False)
-    os.unlink(net_f)
-    os.unlink(pseed_f)
-    os.unlink(target_f)
-    return models
+  net_f    = net.to_file()
+  pseed_f  = pseeds.to_file()
+  target_f = targets.to_file()
+  prg      = [card_min_precursor_prg, net_f, pseed_f, target_f ]
+  coptions = '--project --opt-mode=optN'
+  solver   = GringoClasp(clasp_options=coptions)
+  models   = solver.run(prg,collapseTerms=True,collapseAtoms=False)
+  os.unlink(net_f)
+  os.unlink(pseed_f)
+  os.unlink(target_f)
+  return models
+
 
 def get_card_min_precursor_set(net, pseeds, targets):
-    net_f = net.to_file()
-    pseed_f = pseeds.to_file()
-    target_f = targets.to_file()
-    prg = [card_min_precursor_prg, net_f, pseed_f, target_f ]
-    solver = GringoClasp()
-    solution = solver.run(prg,collapseTerms=True,collapseAtoms=False)
-    os.unlink(net_f)
-    os.unlink(pseed_f)
-    os.unlink(target_f)
-    if solution : return solution[0]
-    return None
+  net_f    = net.to_file()
+  pseed_f  = pseeds.to_file()
+  target_f = targets.to_file()
+  prg      = [card_min_precursor_prg, net_f, pseed_f, target_f ]
+  solver   = GringoClasp()
+  solution = solver.run(prg,collapseTerms=True,collapseAtoms=False)
+  os.unlink(net_f)
+  os.unlink(pseed_f)
+  os.unlink(target_f)
+  if solution : return solution[0]
+  return None
+
 
 def get_automatic_pseeds(net, targets):
-    net_f = net.to_file()
-    target_f = targets.to_file()
-    prg = [automatic_pseeds_prg, net_f, target_f ]
-    solver = GringoClasp()
-    models = solver.run(prg,collapseTerms=True,collapseAtoms=False)
-    os.unlink(net_f)
-    os.unlink(target_f)
-    return models[0]
-    
-    
+  net_f    = net.to_file()
+  target_f = targets.to_file()
+  prg      = [automatic_pseeds_prg, net_f, target_f ]
+  solver   = GringoClasp()
+  models   = solver.run(prg,collapseTerms=True,collapseAtoms=False)
+  os.unlink(net_f)
+  os.unlink(target_f)
+  return models[0]
+
+
 def get_subset_min_precursor_sets(net, pseeds, targets):
-    net_f = net.to_file('net.lp')
-    pseed_f = pseeds.to_file('pseed.lp')
-    target_f = targets.to_file('targets.lp')
-    prg = [precursor_prg, heu_prg, net_f, pseed_f, target_f ]
-    solver = GringoClasp(clasp_options='0 --dom-mod=6 --heu=Domain --enum-mode=record')
-    solutions = solver.run(prg,collapseTerms=True,collapseAtoms=False)
-    os.unlink(net_f)
-    os.unlink(pseed_f)
-    os.unlink(target_f)
-    return solutions
+  net_f     = net.to_file('net.lp')
+  pseed_f   = pseeds.to_file('pseed.lp')
+  target_f  = targets.to_file('targets.lp')
+  prg       = [precursor_prg, heu_prg, net_f, pseed_f, target_f ]
+  solver    = GringoClasp(clasp_options='0 --dom-mod=6 --heu=Domain --enum-mode=record')
+  solutions = solver.run(prg,collapseTerms=True,collapseAtoms=False)
+  os.unlink(net_f)
+  os.unlink(pseed_f)
+  os.unlink(target_f)
+  return solutions
+

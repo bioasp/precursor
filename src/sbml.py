@@ -22,115 +22,122 @@ from pyasp.asp import *
 
 
 def get_pseeds(xmlnode):
-    element = None
-    for e in xmlnode:
-        if e.tag[0] == "{":
-          uri, tag = e.tag[1:].split("}")
-        else: tag = e.tag
-        if tag == "precursor-compounds":
-          element = e
-          break
-    return element
+  element = None
+  for e in xmlnode:
+    if e.tag[0] == "{":
+      uri, tag = e.tag[1:].split("}")
+    else: tag = e.tag
+    if tag == "precursor-compounds":
+      element = e
+      break
+  return element
+
 
 def get_bootstraps(xmlnode):
-    element = None
-    for e in xmlnode:
-        if e.tag[0] == "{":
-          uri, tag = e.tag[1:].split("}")
-        else: tag = e.tag
-        if tag == "bootstrap-compounds":
-          element = e
-          break
-    return element
+  element = None
+  for e in xmlnode:
+    if e.tag[0] == "{":
+      uri, tag = e.tag[1:].split("}")
+    else: tag = e.tag
+    if tag == "bootstrap-compounds":
+      element = e
+      break
+  return element
+
 
 def get_targets(xmlnode):
-    element = None
-    for e in xmlnode:
-        if e.tag[0] == "{":
-          uri, tag = e.tag[1:].split("}")
-        else: tag = e.tag
-        if tag == "target-compounds":
-          element = e
-          break
-    return element
+  element = None
+  for e in xmlnode:
+    if e.tag[0] == "{":
+      uri, tag = e.tag[1:].split("}")
+    else: tag = e.tag
+    if tag == "target-compounds":
+      element = e
+      break
+  return element
+
 
 def get_forbidden(xmlnode):
-    element = None
-    for e in xmlnode:
-        if e.tag[0] == "{":
-          uri, tag = e.tag[1:].split("}")
-        else: tag = e.tag
-        if tag == "forbidden-compounds":
-          element = e
-          break
-    return element
+  element = None
+  for e in xmlnode:
+    if e.tag[0] == "{":
+      uri, tag = e.tag[1:].split("}")
+    else: tag = e.tag
+    if tag == "forbidden-compounds":
+      element = e
+      break
+  return element
 
 
 def get_model(xmlnode):
-    element = None
-    for e in xmlnode:
-        if e.tag[0] == "{":
-          uri, tag = e.tag[1:].split("}")
-        else: tag = e.tag
-        if tag == "model":
-          element = e
-          break
-    return element
+  element = None
+  for e in xmlnode:
+    if e.tag[0] == "{":
+      uri, tag = e.tag[1:].split("}")
+    else: tag = e.tag
+    if tag == "model":
+      element = e
+      break
+  return element
+
 
 def get_listOfSpecies(model):
-    listOfSpecies = None
-    for e in model:
-        if e.tag[0] == "{":
-          uri, tag = e.tag[1:].split("}")
-        else: tag = e.tag
-        if tag == "listOfSpecies":
-          listOfSpecies = e
-          break
-    return listOfSpecies
+  listOfSpecies = None
+  for e in model:
+    if e.tag[0] == "{":
+      uri, tag = e.tag[1:].split("}")
+    else: tag = e.tag
+    if tag == "listOfSpecies":
+      listOfSpecies = e
+      break
+  return listOfSpecies
+
 
 def get_listOfReactions(model):
-    listOfReactions = None
-    for e in model:
-        if e.tag[0] == "{":
-          uri, tag = e.tag[1:].split("}")
-        else: tag = e.tag
-        if tag == "listOfReactions":
-          listOfReactions = e
-          break
-    return listOfReactions
+  listOfReactions = None
+  for e in model:
+    if e.tag[0] == "{":
+      uri, tag = e.tag[1:].split("}")
+    else: tag = e.tag
+    if tag == "listOfReactions":
+      listOfReactions = e
+      break
+  return listOfReactions
+
 
 def get_listOfReactants(reaction):
-    listOfReactants = None
-    for e in reaction:
-        if e.tag[0] == "{":
-          uri, tag = e.tag[1:].split("}")
-        else: tag = e.tag
-        if tag == "listOfReactants":
-          listOfReactants = e
-          break
-    return listOfReactants
+  listOfReactants = None
+  for e in reaction:
+    if e.tag[0] == "{":
+      uri, tag = e.tag[1:].split("}")
+    else: tag = e.tag
+    if tag == "listOfReactants":
+      listOfReactants = e
+      break
+  return listOfReactants
+
 
 def get_listOfProducts(reaction):
-    listOfProducts = None
-    for e in reaction:
-        if e.tag[0] == "{":
-          uri, tag = e.tag[1:].split("}")
-        else: tag = e.tag
-        if tag == "listOfProducts":
-          listOfProducts = e
-          break
-    return listOfProducts
+  listOfProducts = None
+  for e in reaction:
+    if e.tag[0] == "{":
+      uri, tag = e.tag[1:].split("}")
+    else: tag = e.tag
+    if tag == "listOfProducts":
+      listOfProducts = e
+      break
+  return listOfProducts
+
 
 def readSBMLnetwork(filename) :
 
-  lpfacts = TermSet()
-
-  tree = etree.parse(filename)
-  sbml = tree.getroot()
-  model = get_model(sbml)
-
+  lpfacts       = TermSet()
+  tree          = etree.parse(filename)
+  sbml          = tree.getroot()
+  model         = get_model(sbml)
   listOfSpecies = get_listOfSpecies(model)
-  for e in listOfSpecies:
+
+for e in listOfSpecies:
     if e.tag[0] == "{":
       uri, tag = e.tag[1:].split("}")
     else: tag = e.tag
@@ -155,20 +162,20 @@ def readSBMLnetwork(filename) :
 
       listOfProducts = get_listOfProducts(e)
       for p in listOfProducts:
-          lpfacts.add(Term('product', ["\""+p.attrib.get("species")+"\"", "\""+reactionId+"\""]))
+        lpfacts.add(Term('product', ["\""+p.attrib.get("species")+"\"", "\""+reactionId+"\""]))
 
   return lpfacts
 
+
 def readPITUFU(filename) :
 
-  targets = TermSet()
-  seeds = TermSet()
-  misc = TermSet()
-
-  tree = etree.parse(filename)
-  inputs = tree.getroot()
-
+  targets  = TermSet()
+  seeds    = TermSet()
+  misc     = TermSet()
+  tree     = etree.parse(filename)
+  inputs   = tree.getroot()
   target_d = get_targets(inputs)
+
   if len(target_d):
     for e in target_d:
       if e.tag[0] == "{":

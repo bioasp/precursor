@@ -33,10 +33,9 @@ if __name__ == '__main__':
                         help="compute possible seed metabolites",
                         action="store_true")
 
-    args = parser.parse_args()
-
-    netfile = args.net
-    targetsfile =  args.inputs
+    args        = parser.parse_args()
+    netfile     = args.net
+    targetsfile = args.inputs
 
     print('Reading network from ',netfile,'...',end='')
     net = sbml.readSBMLnetwork(netfile)
@@ -62,7 +61,7 @@ if __name__ == '__main__':
     filtered_targets = TermSet()
     for t in targets :
       singlet = String2TermSet(str(t))
-      SAT = query.satcheck(net, pseeds, singlet)
+      SAT     = query.satcheck(net, pseeds, singlet)
       if not SAT :
           filtered_targets.add(t)
     print('done.')
@@ -97,7 +96,7 @@ if __name__ == '__main__':
     print('done.')
 
     for min_set in precursors :
-        utils.print_seeds(min_set)
+      utils.print_seeds(min_set)
 
     print('\nCompute subset minimal precursor sets ...',end='')
     precursors = query.get_subset_min_precursor_sets(net, pseeds, targets)
@@ -105,10 +104,8 @@ if __name__ == '__main__':
 
     print(len(precursors),' subset minimal precursor sets found.')
     for min_set in precursors :
-        utils.print_seeds(min_set)
-
+      utils.print_seeds(min_set)
 
     utils.clean_up()
-
 
 
