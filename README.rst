@@ -7,7 +7,7 @@ You can install precursor by running::
 	
 On Linux the executable script can then be found in ``~/.local/bin``
 
-and on MacOS the script is under ``/Users/YOURUSERNAME/Library/Python/2.7/bin``.
+and on MacOS the script is under ``/Users/YOURUSERNAME/Library/Python/3.6/bin``.
 
 Usage
 =====
