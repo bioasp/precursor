@@ -16,7 +16,9 @@
 # You should have received a copy of the GNU General Public License
 # along with precursor.  If not, see <http://www.gnu.org/licenses/>.
 # -*- coding: utf-8 -*-
-from pyasp.asp import *
+
+#from pyasp.asp import *
+from pyasp.term import *;
 import argparse
 from __precursor__ import query, utils, sbml
 
@@ -95,16 +97,22 @@ if __name__ == '__main__':
     precursors = query.get_card_minimal_precursor_sets(net, pseeds, targets)
     print('done.')
 
+    count=1
     for min_set in precursors :
+      print(count,end=': ')
       utils.print_seeds(min_set)
+      count+=1
 
     print('\nCompute subset minimal precursor sets ...',end='')
     precursors = query.get_subset_min_precursor_sets(net, pseeds, targets)
     print('done.')
 
     print(len(precursors),' subset minimal precursor sets found.')
+    count=1
     for min_set in precursors :
+      print(count,end=': ')
       utils.print_seeds(min_set)
+      count+=1
 
     utils.clean_up()
 

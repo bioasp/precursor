@@ -20,7 +20,7 @@ from setuptools import setup
                          
 setup(
   name             = 'precursor',
-  version          = '1.2.3',
+  version          = '1.2.4',
   url              = 'http://bioasp.github.io/precursor/',
   license          = 'GPLv3+',
   description      = 'Compute minimal metabolic precursors sets that enable the production of target metabolites.',
@@ -31,6 +31,6 @@ setup(
   package_dir      = {'__precursor__' : 'src'},
   package_data     = {'__precursor__' : ['encodings/*.lp']},
   scripts          = ['precursor.py'],
-  install_requires = ['pyasp == 1.4.0']
+  install_requires = ['pyasp == 1.4.4']
 )
 

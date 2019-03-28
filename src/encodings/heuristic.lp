@@ -1,5 +1,2 @@
- 
-_heuristic(new_seed(X),false,1) :- pseed(X).
-
-#show _heuristic/3.
-#show  new_seed/1.
+#heuristic new_seed(X). [1,false]
+#show new_seed/1.

@@ -4,8 +4,8 @@ seed(X) :- ubi(X).
 { seed(X) } :- pseed(X), not ubi(X).
 
 % a reaction is applied if all reactants are available
-areaction(R) :- available(M) : reactant(M,R), reaction(R).
-areaction(R) :- available(M) : product(M,R), reaction(R), reversible(R).
+areaction(R) :- available(M) : reactant(M,R); reaction(R).
+areaction(R) :- available(M) : product(M,R); reaction(R), reversible(R).
 % otherwise its inactive
 ireaction(R) :- reaction(R), not areaction(R).
 
@@ -45,5 +45,4 @@ founded(X) :- reactant(X,R), product(Y,R), founded(Y), reversible(R), areaction(
 
 new_seed(X):- seed(X), not ubi(X).
 
-#hide.
 #show new_seed/1.

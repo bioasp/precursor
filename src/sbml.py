@@ -137,7 +137,7 @@ def readSBMLnetwork(filename) :
   model         = get_model(sbml)
   listOfSpecies = get_listOfSpecies(model)
 
-for e in listOfSpecies:
+  for e in listOfSpecies:
     if e.tag[0] == "{":
       uri, tag = e.tag[1:].split("}")
     else: tag = e.tag
@@ -146,6 +146,7 @@ for e in listOfSpecies:
       lpfacts.add(Term('species', ["\""+e.attrib.get("id")+"\""]))
 
   listOfReactions = get_listOfReactions(model)
+
   for e in listOfReactions:
     if e.tag[0] == "{":
       uri, tag = e.tag[1:].split("}")

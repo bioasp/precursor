@@ -1,27 +1,31 @@
-hclasp version 1.1.4 (clasp version 2.1.3)
-Reading from stdin
-Solving...
-Answer: 1
-new_seed("SER") new_seed("OXALACETIC_ACID") new_seed("ERYTHROSE__45__4P") new_seed("PHOSPHO__45__ENOL__45__PYRUVATE") new_seed("RIBOSE__45__5P") new_seed("DIHYDROXYNAPHTHOATE") new_seed("HCO3") new_seed("GLN") new_seed("OCTAPRENYL__45__DIPHOSPHATE")
-SATISFIABLE
+> precursor.py --autoseeds smueWithoutCofactors.xml inputForSmue.xml
+Reading network from  smueWithoutCofactors.xml ...done.
+Reading inputs from  inputForSmue.xml ...done.
+    10 target metabolites.
+    0 possible seed metabolites.
 
-Models      : 1     
-Time        : 0.013s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
-CPU Time    : 0.000s
-Choices     : 4      (Domain: 4)
-Conflicts   : 4
-Restarts    : 0     
+Autocompute possible seeds ...done.
+    9 possible seeds found.
 
-Atoms       : 763   
-Rules       : 1065   (1: 981 3: 84)
-Bodies      : 516   
-Equivalences: 1718   (Atom=Atom: 525 Body=Body: 121 Other: 1072)
-Tight       : No     (SCCs: 4 Nodes: 50)
+Testing targets for producebility ...done.
+    10  targets can be produced:
+    "ARG"
+    "GLT"
+    "PYRUVATE"
+    "THR"
+    "VITAMIN_K_2"
+    "LYS"
+    "PHE"
+    "L__45__ASPARTATE"
+    "TRP"
+    "ILE"
 
-Variables   : 337    (Eliminated:    0 Frozen:   31)
-Constraints : 106    (Binary: 79.2% Ternary: 18.9% Other:  1.9%)
-Lemmas      : 4      (Binary:  0.0% Ternary:  0.0% Other:100.0%)
-  Conflict  : 4      (Average Length: 1.0) 
-  Loop      : 0      (Average Length: 0.0) 
-  Other     : 0      (Average Length: 0.0)
-  Deleted   : 0     
+Compute cardinality minimum for a precursor sets ...done.
+    Minimal size of a precursor set is 9.
+
+Compute all cadinality minimal precursor sets...done.
+1: "GLN" "DIHYDROXYNAPHTHOATE" "PHOSPHO__45__ENOL__45__PYRUVATE" "OXALACETIC_ACID" "HCO3" "SER" "RIBOSE__45__5P" "OCTAPRENYL__45__DIPHOSPHATE" "ERYTHROSE__45__4P"  
+
+Compute subset minimal precursor sets ...done.
+1  subset minimal precursor sets found.
+1: "GLN" "DIHYDROXYNAPHTHOATE" "PHOSPHO__45__ENOL__45__PYRUVATE" "OXALACETIC_ACID" "HCO3" "SER" "RIBOSE__45__5P" "OCTAPRENYL__45__DIPHOSPHATE" "ERYTHROSE__45__4P"  

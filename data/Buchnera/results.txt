@@ -1,32 +1,36 @@
-hclasp version 1.1.4 (clasp version 2.1.3)
-Reading from stdin
-Solving...
-Answer: 1
-new_seed("COPROPORPHYRINOGEN_III") new_seed("GLN") new_seed("L__45__ASPARTATE")
-new_seed("GLN") new_seed("L__45__ASPARTATE") new_seed("CPD__45__249") new_seed("_8__45__AMINO__45__7__45__OXONONANOATE")
-Answer: 3
-new_seed("GLN") new_seed("L__45__ASPARTATE") new_seed("CPD__45__1302") new_seed("HOMO__45__CYS")
-Answer: 4
-new_seed("GLN") new_seed("CPD__45__7046") new_seed("L__45__ASPARTATE") new_seed("OCTANOYL__45__ACP") new_seed("__124__Non__45__lipoylated__45__domains__124__")
-SATISFIABLE
+> precursor.py --autoseeds bucaiRevisedFiltered.xml inputForBuchnera.xml
+Reading network from  bucaiRevisedFiltered.xml ...done.
+Reading inputs from  inputForBuchnera.xml ...done.
+    12 target metabolites.
+    0 possible seed metabolites.
 
-Models      : 4     
-Time        : 0.066s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
-CPU Time    : 0.020s
-Choices     : 293    (Domain: 225)
-Conflicts   : 2
-Restarts    : 0     
+Autocompute possible seeds ...done.
+    61 possible seeds found.
 
-Atoms       : 3968  
-Rules       : 6560   (1: 6014 3: 546)
-Bodies      : 2525  
-Equivalences: 8980   (Atom=Atom: 2562 Body=Body: 409 Other: 6009)
-Tight       : No     (SCCs: 15 Nodes: 1464)
+Testing targets for producebility ...done.
+    12  targets can be produced:
+    "GTP"
+    "MET"
+    "DGTP"
+    "GLY"
+    "HIS"
+    "LEU"
+    "PYRUVATE"
+    "LYS"
+    "ILE"
+    "VAL"
+    "UTP"
+    "GLT"
 
-Variables   : 1779   (Eliminated:    0 Frozen: 1004)
-Constraints : 1464   (Binary: 79.8% Ternary: 17.2% Other:  2.9%)
-Lemmas      : 6      (Binary: 33.3% Ternary:  0.0% Other: 66.7%)
-  Conflict  : 2      (Average Length: 1.0) 
-  Loop      : 1      (Average Length: 7.0) 
-  Other     : 3      (Average Length: 1.7)
-  Deleted   : 0     
+Compute cardinality minimum for a precursor sets ...done.
+    Minimal size of a precursor set is 3.
+
+Compute all cadinality minimal precursor sets...done.
+1: "L__45__ASPARTATE" "COPROPORPHYRINOGEN_III" "GLN"  
+
+Compute subset minimal precursor sets ...done.
+4  subset minimal precursor sets found.
+1: "HOMO__45__CYS" "L__45__ASPARTATE" "GLN" "CPD__45__1302"  
+2: "__124__Non__45__lipoylated__45__domains__124__" "L__45__ASPARTATE" "CPD__45__7046" "GLN" "OCTANOYL__45__ACP"  
+3: "COPROPORPHYRINOGEN_III" "L__45__ASPARTATE" "GLN"  
+4: "_8__45__AMINO__45__7__45__OXONONANOATE" "L__45__ASPARTATE" "CPD__45__249" "GLN"  

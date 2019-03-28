@@ -16,13 +16,12 @@
 # along with precursor.  If not, see <http://www.gnu.org/licenses/>.
 # -*- coding: utf-8 -*-
 import os
-import tempfile
 from pyasp.asp import *
 
 
 root                   = __file__.rsplit('/', 1)[0]
 precursor_prg          = root + '/encodings/precursor.lp'
-heu_prg                = root + '/encodings/heuristic.lp' 
+heu_prg                = root + '/encodings/heuristic.lp'
 card_min_precursor_prg = root + '/encodings/card_min_precursor.lp'
 automatic_pseeds_prg   = root + '/encodings/automatic_pseed.lp'
 satcheck_prg           = root + '/encodings/satcheck_precursor.lp'
@@ -86,7 +85,7 @@ def get_subset_min_precursor_sets(net, pseeds, targets):
   pseed_f   = pseeds.to_file('pseed.lp')
   target_f  = targets.to_file('targets.lp')
   prg       = [precursor_prg, heu_prg, net_f, pseed_f, target_f ]
-  solver    = GringoClasp(clasp_options='0 --dom-mod=6 --heu=Domain --enum-mode=record')
+  solver    = Gringo4Clasp(gringo_options='--output=smodels', clasp_options='0 --dom-mod=5,16 --heu=Domain --enum-mode=domRec')
   solutions = solver.run(prg,collapseTerms=True,collapseAtoms=False)
   os.unlink(net_f)
   os.unlink(pseed_f)
