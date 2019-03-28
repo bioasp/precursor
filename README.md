@@ -16,6 +16,7 @@ Typical usage is:
     $ precursor.py --autoseeds network targets 
 
 For more options you can ask for help as follows:
+
     $ precursor.py --help
     usage: precursor.py [-h] [--autoseeds] net inputs
   
